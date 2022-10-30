@@ -16,7 +16,6 @@ public:
     virtual void paintEvent(QPaintEvent *ev);
     void paint(QString bgImgDir, double headerScaling=0.5, bool setHeaderMid=false);
     void setBackButton();
-    void closeEvent(QCloseEvent *event);
 
     QMenuBar *menuBar_=nullptr;
     QMenu *menuStart_=nullptr;
@@ -26,7 +25,6 @@ public:
 
 signals:
     void backSignal();
-    void exit();
 };
 
 #endif // ABSTRACTSCENE_H

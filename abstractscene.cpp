@@ -48,8 +48,4 @@ void AbstractScene::setBackButton() {
     });
 }
 
-void AbstractScene::closeEvent(QCloseEvent *event) {
-    emit exit();
-    qDebug()<<"Exit signal emitted" ;
-    QMainWindow::closeEvent(event);
-}
+

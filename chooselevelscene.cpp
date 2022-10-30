@@ -28,7 +28,7 @@ ChooseLevelScene::ChooseLevelScene(QWidget *parent)
             playScene->show();
             hide();
 
-            connect(playScene, &PlayScene::exit, this, &ChooseLevelScene::close);
+//            connect(playScene, &PlayScene::exit, this, &ChooseLevelScene::close);
             connect(playScene, &PlayScene::backSignal, this, [=](){
                 setGeometry(playScene->geometry());
                 QTimer::singleShot(200, this, [=](){

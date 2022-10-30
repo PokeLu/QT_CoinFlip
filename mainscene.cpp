@@ -19,7 +19,7 @@ MainScene::MainScene(QWidget *parent)
 
     chooseLevelScene_ = new ChooseLevelScene;
     connect(chooseLevelScene_, &ChooseLevelScene::backSignal, this, &MainScene::backEvent);
-    connect(chooseLevelScene_, &ChooseLevelScene::exit, this, &MainScene::close);
+//    connect(chooseLevelScene_, &ChooseLevelScene::exit, this, &MainScene::close);
 }
 
 void MainScene::startEvent(){
